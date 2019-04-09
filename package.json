@@ -1,31 +1,49 @@
 {
-  "name": "@monax/burrow",
-  "description": "Javascript library that calls a Hyperledger Burrow server over rpc.",
-  "version": "0.20.8",
+  "_from": "@monax/burrow@0.24.3",
+  "_id": "@monax/burrow@0.24.3",
+  "_inBundle": false,
+  "_integrity": "sha512-HVqPF+5KGkt+UkBj/Mn8JGEH6+7x67m/0TApBmvTdbbT6TG5IouzP4kP1pooo0e8RAGmxybPJMalZcReFDpAUw==",
+  "_location": "/@monax/burrow",
+  "_phantomChildren": {
+    "lodash.camelcase": "4.3.0",
+    "protobufjs": "6.8.8"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@monax/burrow@0.24.3",
+    "name": "@monax/burrow",
+    "escapedName": "@monax%2fburrow",
+    "scope": "@monax",
+    "rawSpec": "0.24.3",
+    "saveSpec": null,
+    "fetchSpec": "0.24.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@monax/burrow/-/burrow-0.24.3.tgz",
+  "_shasum": "e59b0a1a6c5ddc9dbaf65424111cec83f0df7a9c",
+  "_spec": "@monax/burrow@0.24.3",
+  "_where": "/var/opt/marmot",
   "author": {
     "name": "Dennis Mckinnon"
   },
   "bugs": {
     "url": "https://github.com/monax/bosmarmot/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
-    "@grpc/proto-loader": "^0.3.0",
-    "@nodeguy/generic": "3.0.0",
-    "@nodeguy/type": "0.2.0",
-    "bignumber.js": "github:debris/bignumber.js#94d7146671b9719e00a09c29b01a691bc85048c2",
+    "@grpc/proto-loader": "^0.4.0",
     "crypto-js": "3.1.4",
-    "g-functions": "0.3.0",
-    "grpc": "^1.16.1",
-    "protobufjs": "^6.8.6",
-    "ramda": "0.23.0",
-    "utf8": "2.1.2",
-    "web3": "0.18.4"
+    "ethereumjs-abi": "^0.6.5",
+    "grpc": "^1.18.0",
+    "protobufjs": "^6.8.6"
   },
+  "deprecated": false,
+  "description": "Javascript library that calls a Hyperledger Burrow server over rpc.",
   "devDependencies": {
-    "fs-extra": "^5.0.0",
-    "ink-docstrap": "1.3.0",
-    "istanbul": "0.4.5",
-    "jsdoc": "3.4.3",
+    "fs-extra": "^7.0.1",
     "mocha": "5.2.0",
     "solc": "0.4.24",
     "standard": "9.0.2"
@@ -39,22 +57,21 @@
     "Hyperledger",
     "Monax"
   ],
-  "license": "GPL-3.0",
+  "license": "Apache2.0",
   "main": "./index.js",
   "maintainers": [
     {
       "name": "Dennis Mckinnon",
-      "email": "Contact@Monax.io"
+      "email": "contact@monax.io"
     }
   ],
+  "name": "@monax/burrow",
   "repository": {
     "type": "git",
-    "url": "https://github.com/monax/bosmarmot"
+    "url": "git+https://github.com/monax/bosmarmot.git"
   },
   "scripts": {
-    "doc": "jsdoc --configure JSDoc/conf.json --destination doc index.js lib README.md",
     "precommit": "standard --fix",
-    "predoc": "rm -rf doc",
     "pretest": "standard --fix",
     "test": "../tests/burrow.js.sh"
   },
@@ -68,5 +85,6 @@
       "it",
       "run"
     ]
-  }
+  },
+  "version": "0.24.3"
 }
